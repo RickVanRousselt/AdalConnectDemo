@@ -12,7 +12,7 @@ namespace AdalConnectDemo2
             this.InitializeComponent();
         }
 
-        private async void BtnConnect_OnClick(object sender, RoutedEventArgs e)
+        private async void BtnConnect_OnClick(object sender, RoutedEventArgs e) 
         {
             AuthenticationContext ac = new AuthenticationContext("https://login.windows.net/common",new TokenCache());
             PlatformParameters platformParameters = new PlatformParameters(PromptBehavior.Auto, false);
